@@ -34,10 +34,10 @@ import { ARButton } from 'https://cdn.jsdelivr.net/npm/three@0.157.0/examples/js
     // بارگذاری مدل
     const loader = new GLTFLoader();
     loader.load(
-  'https://github.com/ygnko/webxr-glb-viewer/blob/main/model.glb', // لینک جدید فایل مدل
+  'https://raw.githubusercontent.com/ygnko/food_xr/main/model.glb', // آدرس مدل GLB در GitHub
   (gltf) => {
     const model = gltf.scene;
-    model.scale.set(0.1, 0.1, 0.1); // تنظیم مقیاس مدل
+    model.scale.set(0.1, 0.1, 0.1); // تنظیم اندازه مدل
     scene.add(model);
   },
   undefined,
